@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2f6f5405_002Dc675_002D42d9_002Db16a_002D3a58ac5a1046/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="EnterFileToHtmlConverter_ReturnsStringAndEqualsToExpectedResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::45FECAE5-AC0D-4E0B-9FEC-8A4912F5FE59::net7.0::MaToSD_2UnitTests.UnitTest1.HtmlConverter_ReturnsStringAndEqualsToExpectedResult&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::45FECAE5-AC0D-4E0B-9FEC-8A4912F5FE59::net7.0::MaToSD_2UnitTests.UnitTest1.ANSIConverter_ReturnsStringAndEqualsToExpectedResult&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,18 @@
+[1mBold[0m
+
+[3mItalic[0m
+
+[7mmonospaced[0m
+
+_ 
+
+[7mSome text **He He**[0m
+
+Paragraph1. Lorem Ipsum Dolor Sit Amet.This is still paragraph 1. 
+
+And after a blank line this is paragraph 2. 
+
+Underscore after_ 
+
+_Underscore before 
+
