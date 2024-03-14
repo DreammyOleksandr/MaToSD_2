@@ -2,7 +2,7 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         string filePath = args[^1];
 
@@ -12,9 +12,8 @@ class Program
             return;
         }
 
-        string text = File.ReadAllText(filePath);
-
-
+        string text = await File.ReadAllTextAsync(filePath);
+        
         if (args.Contains("--format=ansi"))
         {
             text = ANSIConverter.Convert(text);
@@ -27,17 +26,17 @@ class Program
             if (args.Contains("--out"))
             {
                 string outputFile = Path.ChangeExtension(filePath, ".html");
-                File.WriteAllText(outputFile, text);
+                await File.WriteAllTextAsync(outputFile, text);
             }
         }
         else
         {
             text = ANSIConverter.Convert(text);
             Console.WriteLine(text);
-            text = File.ReadAllText(filePath);
+            text = await File.ReadAllTextAsync(filePath);
             text = HTMLConverter.Convert(text);
             string outputFile = Path.ChangeExtension(filePath, ".html");
-            File.WriteAllText(outputFile, text);
+            await File.WriteAllTextAsync(outputFile, text);
         }
     }
 }
