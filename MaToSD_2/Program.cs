@@ -13,16 +13,31 @@ class Program
         }
 
         string text = File.ReadAllText(filePath);
-        text = HTMLConverter.Convert(text);
 
-        Console.WriteLine(text);
 
-        if (args.Contains("--out"))
+        if (args.Contains("--format=ansi"))
         {
+            text = ANSIConverter.Convert(text);
+            Console.WriteLine(text);
+        }
+        else if (args.Contains("--format=html"))
+        {
+            text = HTMLConverter.Convert(text);
+            Console.WriteLine(text);
+            if (args.Contains("--out"))
+            {
+                string outputFile = Path.ChangeExtension(filePath, ".html");
+                File.WriteAllText(outputFile, text);
+            }
+        }
+        else
+        {
+            text = ANSIConverter.Convert(text);
+            Console.WriteLine(text);
+            text = File.ReadAllText(filePath);
+            text = HTMLConverter.Convert(text);
             string outputFile = Path.ChangeExtension(filePath, ".html");
             File.WriteAllText(outputFile, text);
         }
     }
-    
-   
 }
