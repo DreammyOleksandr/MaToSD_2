@@ -15,7 +15,24 @@ public class UnitTest1
         string text = await File.ReadAllTextAsync(filePath);
         string expectedResult = await File.ReadAllTextAsync(expectedResultPath);
         string result = HTMLConverter.Convert(text);
-        
+
+        //Assert
+        Assert.True(!String.IsNullOrEmpty(result));
+        Assert.Equal(result, expectedResult);
+    }
+
+    [Fact]
+    public async Task ANSIConverter_ReturnsStringAndEqualsToExpectedResult()
+    {
+        //Arrange
+        string filePath = "../../../TestFiles/CheckForResult.md";
+        string expectedResultPath = "../../../TestFiles/ExpectedAnsiResult.txt";
+
+        //Act
+        string text = await File.ReadAllTextAsync(filePath);
+        string expectedResult = await File.ReadAllTextAsync(expectedResultPath);
+        string result = ANSIConverter.Convert(text);
+
         //Assert
         Assert.True(!String.IsNullOrEmpty(result));
         Assert.Equal(result, expectedResult);
