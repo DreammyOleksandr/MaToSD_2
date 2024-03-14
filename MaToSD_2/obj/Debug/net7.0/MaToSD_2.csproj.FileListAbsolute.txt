@@ -1,0 +1,15 @@
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/bin/Debug/net7.0/MaToSD_2
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/bin/Debug/net7.0/MaToSD_2.deps.json
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/bin/Debug/net7.0/MaToSD_2.runtimeconfig.json
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/bin/Debug/net7.0/MaToSD_2.dll
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/bin/Debug/net7.0/MaToSD_2.pdb
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.csproj.AssemblyReference.cache
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.AssemblyInfoInputs.cache
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.AssemblyInfo.cs
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.csproj.CoreCompileInputs.cache
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.dll
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/refint/MaToSD_2.dll
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.pdb
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/MaToSD_2.genruntimeconfig.cache
+/Users/bondarenkooleksandr/C#Projects/MaToSD_2/MaToSD_2/obj/Debug/net7.0/ref/MaToSD_2.dll
