@@ -72,7 +72,7 @@ public class ANSIConverter
         //this is a Monospaced text 
         if (Regex.IsMatch(line, @"`([^`]+)`"))
         {
-            line = Regex.Replace(line, @"`([^`]+)`", "\u001b[7m$1\u001bO[0m");
+            line = Regex.Replace(line, @"`([^`]+)`", "\u001b[7m$1\u001b[0m");
             if (Regex.IsMatch(line, @"\*\*(.*?)\*\*") || Regex.IsMatch(line, @"_(.*?)_"))
                 throw new Exception("Nested markup inside <tt></tt> is detected");
         }

@@ -2,7 +2,7 @@ using MaToSD_2;
 
 namespace MaToSD_2UnitTests;
 
-public class ConvertersTests
+public class UnitTest1
 {
     [Fact]
     public async Task HtmlConverter_ReturnsStringAndEqualsToExpectedResult()
