@@ -58,7 +58,7 @@ public class HTMLConverter
         //this is a Bold text 
         if (Regex.IsMatch(line, @"\*\*(.*?)\*\*"))
         {
-            line = Regex.Replace(line, @"\*\*(.*?)\*\*", "<b>$1</b>");
+            line = Regex.Replace(line, @"\*\*(.*?)\*\*", "<b>$1nn</b>");
             if (Regex.IsMatch(line, @"_(.*?)_") || Regex.IsMatch(line, @"`([^`]+)`"))
                 throw new Exception("Nested markup inside <b></b> is detected");
         }
