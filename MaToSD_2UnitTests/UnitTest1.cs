@@ -37,4 +37,25 @@ public class UnitTest1
         Assert.True(!String.IsNullOrEmpty(result));
         Assert.Equal(result, expectedResult);
     }
+
+    [Fact]
+    public async Task HtmlConverterCreatesFile_FileShouldExistAndBeEqualToExpected()
+    {
+        //Arrange
+        string filePath = "../../../TestFiles/CheckForResult.md";
+        string expectedResultPath = "../../../TestFiles/ExpectedHtmlResult.html";
+
+        //Act
+        string text = await File.ReadAllTextAsync(filePath);
+        string expectedResult = await File.ReadAllTextAsync(expectedResultPath);
+        string result = HTMLConverter.Convert(text);
+        await HTMLConverter.CreateHtmlFile(result, filePath);
+        string resultFromFile = await File.ReadAllTextAsync(Path.ChangeExtension(filePath, ".html"));
+
+        //Assert
+        Assert.True(File.Exists(Path.ChangeExtension(filePath, ".html")));
+        Assert.Equal(expectedResult, resultFromFile);
+
+        File.Delete(Path.ChangeExtension(filePath, ".html"));
+    }
 }
