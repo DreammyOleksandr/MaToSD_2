@@ -105,4 +105,10 @@ public class HTMLConverter
         Regex.IsMatch(line, @"`([^`]+)`") ||
         Regex.IsMatch(line, @"_(.*?)_") ||
         line.Equals("");
+
+    public static async Task CreateHtmlFile(string text, string path)
+    {
+        string outputFile = Path.ChangeExtension(path, ".html");
+        await File.WriteAllTextAsync(outputFile, text);
+    }
 }

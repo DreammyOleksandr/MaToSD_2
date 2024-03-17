@@ -13,7 +13,7 @@ class Program
         }
 
         string text = await File.ReadAllTextAsync(filePath);
-        
+
         if (args.Contains("--format=ansi"))
         {
             text = ANSIConverter.Convert(text);
@@ -24,10 +24,7 @@ class Program
             text = HTMLConverter.Convert(text);
             Console.WriteLine(text);
             if (args.Contains("--out"))
-            {
-                string outputFile = Path.ChangeExtension(filePath, ".html");
-                await File.WriteAllTextAsync(outputFile, text);
-            }
+                await HTMLConverter.CreateHtmlFile(text, filePath);
         }
         else
         {
@@ -35,8 +32,7 @@ class Program
             Console.WriteLine(text);
             text = await File.ReadAllTextAsync(filePath);
             text = HTMLConverter.Convert(text);
-            string outputFile = Path.ChangeExtension(filePath, ".html");
-            await File.WriteAllTextAsync(outputFile, text);
+            await HTMLConverter.CreateHtmlFile(text, filePath);
         }
     }
 }
